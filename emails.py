@@ -79,3 +79,15 @@ for mail in email_list:
     if mail.message_id not in visited:
         print print_thread(mail, [])
     visited.extend(thread)
+
+# Output:
+# ['<17@example>']
+# ['<16@example>']
+# ['<15@example>']
+# ['<14@example>', '<13@example>', '<12@example>']
+# ['<11@example>']
+# ['<10@example>', '<9@example>']
+# ['<5@example>']
+# ['<8@example>', '<7@example>', '<6@example>', '<2@example>', '<1@example>']
+# ['<4@example>']
+# ['<3@example>', '<1@example>']
